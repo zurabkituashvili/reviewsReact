@@ -1,0 +1,120 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  background-color: rgb(108, 164, 233);
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(74, 73, 73, 0.34);
+  text-align: center;
+  position: relative;
+}
+.braces {
+  position: absolute;
+  top: 50px;
+  left: 290px;
+  background-color: rgb(40, 172, 216);
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 8px -7px 0px 0px rgb(108, 164, 233);
+}
+
+.profile-name {
+  margin: 0;
+}
+
+.profile-job {
+  color: rgb(108, 164, 233);
+  margin-bottom: 1rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.profile-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.surprise-btn {
+  background-color: rgb(208, 233, 246);
+  color: rgb(108, 164, 233);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.surprise-btn:hover {
+  background-color: #444444;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 0 1rem;
+  display: inline-block;
+  color: rgb(108, 164, 233);
+}
+
+p {
+  color: gray;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
